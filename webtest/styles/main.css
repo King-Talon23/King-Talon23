@@ -11,6 +11,8 @@
     border: 1px solid rgba(0, 0, 0, 0.3); 
     border-top: none; 
     margin-bottom: 3em;
+
+    background-color: #f7f7f9;
   }
   
 
@@ -28,3 +30,22 @@
     content: ":";
   }
   
+  body {
+    background-color: #000000; 
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #0056b3; 
+  }
+
+  a {
+    color: #ff0000; 
+    text-decoration: underline
+}
+
+
+  ::selection {
+    background-color: #ffeeba; 
+    color: #00ff48; 
+  }
