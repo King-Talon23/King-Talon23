@@ -1,10 +1,10 @@
 /* 2.1 */
 * {
     box-sizing: border-box;
-  }
+}
   
   /* 2.2-2.6 */
-  .width-wrap {
+.width-wrap {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 2em 2em;
@@ -13,22 +13,22 @@
     margin-bottom: 3em;
 
     background-color: #f7f7f9;
-  }
+}
   
 
   
   /* 2.7 */
-  footer hr {
+footer hr {
     width: min(max(50vw, 300px), 890px);
     margin: 3em 0 2em 0; 
     border: none; 
     border-bottom: 3px dotted #007ACC; 
-  }
+}
   
   /* 2.8 */
-  dt::after {
+dt::after {
     content: ":";
-  }
+}
   
   body {
     background-color: #000000; 
@@ -37,7 +37,7 @@
 
 h1, h2, h3 {
     color: #0056b3; 
-  }
+}
 
   a {
     color: #ff0000; 
@@ -45,7 +45,50 @@ h1, h2, h3 {
 }
 
 
-  ::selection {
+::selection {
     background-color: #ffeeba; 
     color: #00ff48; 
-  }
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em; 
+    margin-right: -2em;
+}
+  
+  
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    padding-left: 2em; 
+    padding-right: 2em;
+}
+
+  
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+  
+header nav ul li {
+    display: inline;
+    list-style: none;
+}
+  
+header nav ul li a {
+    display: inline-block; 
+    position: relative;
+    text-decoration: none; 
+    color: #c70000; 
+    padding: 1em;
+
+    border-top: 4px solid transparent;
+    margin-bottom: 0.5em; 
+
+    line-height: 1.5;
+    padding-top: 1em; 
+}
+  
+header nav ul li a:hover {
+    border-top-color: #760091; 
+}
+  
