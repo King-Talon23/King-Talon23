@@ -1,0 +1,30 @@
+/* 2.1 */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* 2.2-2.6 */
+  .width-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-top: none; 
+    margin-bottom: 3em;
+  }
+  
+
+  
+  /* 2.7 */
+  footer hr {
+    width: min(max(50vw, 300px), 890px);
+    margin: 3em 0 2em 0; 
+    border: none; 
+    border-bottom: 3px dotted #007ACC; 
+  }
+  
+  /* 2.8 */
+  dt::after {
+    content: ":";
+  }
+  
