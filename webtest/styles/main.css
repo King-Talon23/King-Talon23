@@ -109,4 +109,30 @@ table th, table td {
     background-color: rgba(0, 0, 0, 0.15); 
   }
   
+
+label {
+    display: block;
+}
+  
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+}
+  
+input[type="submit"] {
+    border: none; 
+    padding: 1em 3em; 
+    color: #ffffff; 
+    background-color: #007ACC; 
+    cursor: pointer; 
+}
+  
+input[type="submit"]:hover {
+    background-color: #005fa3; 
+}
+  
+input:invalid {
+    background-color: #ff0000; 
+}
+  
   
