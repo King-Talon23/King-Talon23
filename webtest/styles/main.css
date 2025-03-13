@@ -91,4 +91,22 @@ header nav ul li a {
 header nav ul li a:hover {
     border-top-color: #760091; 
 }
+
+
+table th, table td {
+    padding: 0.3em 1em; 
+  }
+  
+ thead th, tfoot th, tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  tbody td {
+    background-color: rgba(0, 0, 0, 0.05); 
+  }
+  
+ tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15); 
+  }
+  
   
