@@ -1,0 +1,138 @@
+/* 2.1 */
+* {
+    box-sizing: border-box;
+}
+  
+  /* 2.2-2.6 */
+.width-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-top: none; 
+    margin-bottom: 3em;
+
+    background-color: #f7f7f9;
+}
+  
+
+  
+  /* 2.7 */
+footer hr {
+    width: min(max(50vw, 300px), 890px);
+    margin: 3em 0 2em 0; 
+    border: none; 
+    border-bottom: 3px dotted #007ACC; 
+}
+  
+  /* 2.8 */
+dt::after {
+    content: ":";
+}
+  
+  body {
+    background-color: #000000; 
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #0056b3; 
+}
+
+  a {
+    color: #ff0000; 
+    text-decoration: underline
+}
+
+
+::selection {
+    background-color: #ffeeba; 
+    color: #00ff48; 
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em; 
+    margin-right: -2em;
+}
+  
+  
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    padding-left: 2em; 
+    padding-right: 2em;
+}
+
+  
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+  
+header nav ul li {
+    display: inline;
+    list-style: none;
+}
+  
+header nav ul li a {
+    display: inline-block; 
+    position: relative;
+    text-decoration: none; 
+    color: #c70000; 
+    padding: 1em;
+
+    border-top: 4px solid transparent;
+    margin-bottom: 0.5em; 
+
+    line-height: 1.5;
+    padding-top: 1em; 
+}
+  
+header nav ul li a:hover {
+    border-top-color: #760091; 
+}
+
+
+table th, table td {
+    padding: 0.3em 1em; 
+  }
+  
+ thead th, tfoot th, tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  tbody td {
+    background-color: rgba(0, 0, 0, 0.05); 
+  }
+  
+ tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15); 
+  }
+  
+
+label {
+    display: block;
+}
+  
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+}
+  
+input[type="submit"] {
+    border: none; 
+    padding: 1em 3em; 
+    color: #ffffff; 
+    background-color: #007ACC; 
+    cursor: pointer; 
+}
+  
+input[type="submit"]:hover {
+    background-color: #005fa3; 
+}
+  
+input:invalid {
+    background-color: #ff0000; 
+}
+  
+  
