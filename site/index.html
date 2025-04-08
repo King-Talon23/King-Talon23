@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<lang html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Talon King">
     <meta name="description"
         content="Welcome to Talon's website, showcasing my favorite things, a haiku, and some other stuff.">
-    <meta lang="en">
     <title>Talon King's Website</title>
-    <link rel="icon" type="image/png" href="/King-Talon23/./favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="/King-Talon23/./favicon.svg">
-    <link rel="shortcut icon" href="/King-Talon23/./favicon.ico">
+    <link rel="icon" type="image/png" href="/King-Talon23/site/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/King-Talon23/site/favicon.svg">
+    <link rel="shortcut icon" href="/King-Talon23/site/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/King-Talon23/./apple-touch-icon.png">
     <link rel="manifest" href="/King-Talon23/./site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="King-Talon23/favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -35,120 +35,122 @@
         </header>
         <main>
             <h1>Welcome to Talons Website</h1>
-            <p>
-                Hi, I'm Talon King. I am a type one diabetic and have had it for almost 5 years.
-                In nov/dec of 2024 I ran over 300km for a charity. I grew up in Thessalon, Ontario, about an hour away
-                from Sault Ste Marie.
-            </p>
-            <p>
-                Originally I was going to take a year off to work and not go to college, but
-                I won a last minute bursary at my high school graduation that allowed me to pay for college.
-            </p>
 
-            <a href="/webtest/images/fullsizeme.jpg">
-                <picture>
-                    <source srcset="/webtest/images/smallme.jpg" media="(max-width: 500px)">
-                    <source srcset="/webtest/images/mediumme.jpg" media="(min-width: 501px)">
-                    <img src="/webtest/images/mediumme.jpg" alt="A photo of me on the way to sudbury">
-                </picture>
-            </a>
+            <div class="bio">
+                <a href="/site/images/fullsizeme.jpg">
+                    <picture>
+                        <source srcset="site/images/smallme.jpg" media="(max-width: 500px)">
+                        <source srcset="site/images/mediumme.jpg" media="(min-width: 501px)">
+                        <img src="site/images/mediumme.jpg" alt="A photo of me on the way to sudbury" class="selfie">
+                    </picture>
+                </a>
+
+                <p>
+                    Hi, I'm Talon King. I am a type one diabetic and have had it for almost 5 years.
+                    In nov/dec of 2024 I ran over 300km for a charity. I grew up in Thessalon, Ontario, about an hour away
+                    from Sault Ste Marie.
+                </p>
+                <p>
+                    Originally I was going to take a year off to work and not go to college, but
+                    I won a last minute bursary at my high school graduation that allowed me to pay for college.
+                </p>
+
+                <table>
+                    <caption>Table 1. Current Courses</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Term</th>
+                            <th colspan="2">Course</th>
+                            <th rowspan="2">Hrs/Week</th>
+                        </tr>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="6">Fall</th>
+                            <td>CSD110</td>
+                            <td>Introduction to Prorgramming</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CMM115</td>
+                            <td>Communications I</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>CSD113</td>
+                            <td>Computing Environments</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>MTH122</td>
+                            <td>Computer Mathematics</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>CSD122</td>
+                            <td>Hardware, OS, and Networks</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>TSD123</td>
+                            <td>Technology in Society</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="6">Winter</th>
+                            <td>CSD103</td>
+                            <td>Business Applications</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CSD112</td>
+                            <td>Introduction to Web Devlopment</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CSD121</td>
+                            <td>Programming Concepts</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CSD123</td>
+                            <td>Databases</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CSD124</td>
+                            <td>System Analysis and Design</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>CSD125</td>
+                            <td>Emerging Technology</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3"><strong>Total</strong></th>
+                            <th><strong>43</strong></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
 
             <h2>My Favourite Things</h2>
             <figure>
                 <a href="https://my.clevelandclinic.org/health/body/22601-insulin">
-                    <img src="/images/logo.jpg" alt="Logo">
+                    <img src="/site/images/logo.jpg" alt="Logo">
                 </a>
                 <figcaption>I &lt;3 insulin.</figcaption>
             </figure>
 
-            <table>
-                <caption>Table 1. Current Courses</caption>
-                <thead>
-                    <tr>
-                        <th rowspan="2">Term</th>
-                        <th colspan="2">Course</th>
-                        <th rowspan="2">Hrs/Week</th>
-                    </tr>
-                    <tr>
-                        <th>Code</th>
-                        <th>Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th rowspan="6">Fall</th>
-                        <td>CSD110</td>
-                        <td>Introduction to Prorgramming</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>CMM115</td>
-                        <td>Communications I</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>CSD113</td>
-                        <td>Computing Environments</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>MTH122</td>
-                        <td>Computer Mathematics</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>CSD122</td>
-                        <td>Hardware, OS, and Networks</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>TSD123</td>
-                        <td>Technology in Society</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <th rowspan="6">Winter</th>
-                        <td>CSD103</td>
-                        <td>Business Applications</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>CSD112</td>
-                        <td>Introduction to Web Devlopment</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>CSD121</td>
-                        <td>Programming Concepts</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>CSD123</td>
-                        <td>Databases</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>CSD124</td>
-                        <td>System Analysis and Design</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>CSD125</td>
-                        <td>Emerging Technology</td>
-                        <td>3</td>
-                    </tr>
-
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="3"><strong>Total</strong></th>
-                        <th><strong>43</strong></th>
-                    </tr>
-                </tfoot>
-            </table>            
             <h3>Favorite Games</h3>
             <ol>
-                <!--You found my hidden comment-->
                 <li>Chess</li>
                 <li>Bo2</li>
                 <li>Noita</li>
@@ -187,7 +189,8 @@
             </p>
             <picture>
                 <source srcset="/images/sc-logo.svg" type="image/svg+xml">
-                <img src="/images/sc-logo.png" srcset="images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x" alt="Sault College logo" width="70">
+                <img src="/images/sc-logo.png" srcset="images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x"
+                    alt="Sault College logo" width="70">
             </picture>
         </footer>
         <a href="#top" title="Back to top">Return to top page</a>

@@ -235,6 +235,13 @@ header nav ul li a {
     letter-spacing: 4px;        
 }
 
+h1 {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* example gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
 
 
 
