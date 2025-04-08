@@ -54,12 +54,14 @@ header nav {
 }
 
 header nav ul {
-    margin: 0;
-    padding: 0;
-}
+    list-style: none;
+    padding: 0;       
+    margin: 0 auto;  
+    display: flex;
+    justify-content: center;
+  }
 
 header nav ul li {
-    display: inline;
     list-style: none;
 }
 
