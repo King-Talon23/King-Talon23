@@ -87,3 +87,8 @@ span {
     color: #FF0000;
     font-weight: 600;
 }
+
+form ul {
+    padding: 0;         
+    list-style-type: none;  
+}
