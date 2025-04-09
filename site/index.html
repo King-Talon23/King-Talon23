@@ -19,6 +19,50 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap"
         rel="stylesheet">
+        <style>
+            .favourites {
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .favourites input[type="radio"] {
+                display: none;
+            }
+    
+            .favourites label {
+                order: -1;
+                display: inline-block;
+                padding: 0.5em 1em;
+                background-color: #eee;
+                cursor: pointer;
+                margin-right: 0.2em;
+                border-radius: 6px 6px 0 0;
+                font-weight: bold;
+                font-family: 'Permanent Marker', cursive;
+                color: #333;
+            }
+    
+            .favourites input[type="radio"]:checked + label {
+                background-color: #760091;
+                color: #fff;
+                border-bottom: 4px solid #333;
+            }
+    
+            .favourites label + div {
+                display: none;
+                width: 100%;
+                padding: 1em;
+                background-color: #f9f9f9;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .favourites input[type="radio"]:checked + label + div {
+                display: flex;
+            }
+        </style>
 </head>
 
 <body>
@@ -144,7 +188,7 @@
             <h2>My Favourite Things</h2>
             <div class="favourites">
                 <input type="radio" name="tabset" id="tab1" checked>
-                <label for="tab1"><h3>Insulin Picture</h3></label>
+                <label for="tab1"><h3>Insulin</h3></label>
                 <div>
                     <figure>
                         <a href="https://my.clevelandclinic.org/health/body/22601-insulin">
