@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Talon King">
     <meta name="description"
         content="Welcome to Talon's website, showcasing my favorite things, a haiku, and some other stuff.">
@@ -62,6 +63,28 @@
             .favourites input[type="radio"]:checked + label + div {
                 display: flex;
             }
+            @media (max-width: 800px) {
+
+                    .favourites {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+
+                    .favourites label {
+                        order: 0;  
+                    }
+
+
+                    .favourites label {
+                        margin-bottom: 1rem; 
+                    }
+
+                    .favourites input {
+                        margin-bottom: 1rem; 
+                    }
+                }
+
         </style>
 </head>
 
@@ -69,7 +92,9 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
-                <ul>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"></label>
+                <ul class="nav-links">
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -102,7 +127,7 @@
                     I won a last minute bursary at my high school graduation that allowed me to pay for college.
                 </p>
 
-                <table>
+                <table class="courses">
                     <caption>Table 1. Current Courses</caption>
                     <thead>
                         <tr>
@@ -251,7 +276,7 @@
                     alt="Sault College logo" width="70">
             </picture>
         </footer>
-        <a href="#top" class="back-to-top" title="Back to top">Return to top page</a>
+        <a href="#top" class="back-to-top" title="Back to top">◤</a>
     </div>
 </body>
 

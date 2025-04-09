@@ -290,10 +290,16 @@ a[href="#top"]:hover {
 }
 
 .bio a {
-    display: block;
+    display: inline-block;
     position: relative;
     width: fit-content;
+    
 }
+
+.bio {
+    column-width: 13em;
+}
+
 
 .paperclip {
     background: none;
@@ -319,8 +325,160 @@ a[href="#top"]:hover {
   
 
   .back-to-top:hover {
-    transform: rotate(45deg);   
+    transform: rotate(45deg);
+    transition: transform 200ms; 
   }
+
+  img {
+    max-width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.gallery a:hover {
+    transform: scale(1.1);
+    transition: transform 200ms;
+}
+
+@media (max-width: 450px) {
+    .col-span-2 {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 700px) {
+    table.courses {
+
+      border-collapse: separate;
+    }
+  
+
+    table.courses thead,
+    table.courses tfoot,
+    table.courses th {
+      display: none;
+    }
+  
+
+    table.courses td {
+      display: block;
+      padding: 0 1rem;
+    }
+  
+
+    table.courses caption {
+      caption-side: top;
+    }
+  
+
+    table.courses td:first-of-type {
+      padding-top: 0.3em;
+      font-weight: bold;
+    }
+  
+
+    table.courses td:last-of-type {
+      padding-bottom: 0.3em;
+      font-style: italic;
+      font-size: 0.8em;
+    }
+  
+
+    table.courses td:last-of-type::after {
+      content: " hrs/wk";
+    }
+  }
+
+
+@media (max-width: 600px) {
+    .lorem-image {
+      float: none !important; 
+      display: block;         
+      margin-left: auto;      
+      margin-right: auto;      
+    }
+  }
+
+  @media (max-width: 700px) {
+    header nav ul {
+      display: flex;          
+      flex-direction: column; 
+      align-items: center;     
+    }
+  
+
+    header nav a {
+      padding-top: 0.5em;    
+      border-top: none;      
+    }
+  
+    header nav a:hover {
+      text-decoration: underline; 
+      border-top: none;           
+    }
+  }
+
+
+#menu-toggle,
+.sandwich {
+  display: none;
+}
+
+@media (max-width: 700px) {
+    .sandwich-icon {
+      display: block;
+      width: 40px;
+      height: 25px;
+      border-top: 5px solid #333;
+      cursor: pointer;
+      margin: 1em auto;
+      position: relative;
+    }
+  
+    .sandwich-icon::before,
+    .sandwich-icon::after {
+      content: "";
+      display: block;
+      width: 40px;
+      border-top: 5px solid #333;
+      position: absolute;
+      left: 0;
+    }
+        
+      .sandwich-icon::before {
+        top: 10px; 
+      }
+      
+      .sandwich-icon::after {
+        top: 20px;
+      }
+      
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 0;
+      overflow: hidden;
+      transition: height 200ms ease-in-out;
+    }
+  
+    #menu-toggle:checked + .sandwich-icon + ul {
+      height: 200px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
   
   
   

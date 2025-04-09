@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Talon King">
     <meta name="description"
         content="Welcome to Talon's website, showcasing my favorite things, a haiku, and some other stuff.">
@@ -36,6 +37,8 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+              <input type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="sandwich"></label>
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="links.html">Links</a></li>
@@ -56,6 +59,7 @@
             <p>
               <img
                 src="https://loremflickr.com/320/240/nature"
+                class="lorem-image"
                 alt="Random nature"
                 style="float: right;"
               />
@@ -67,6 +71,7 @@
               <img
                 src="https://loremflickr.com/320/240/city"
                 alt="Random city"
+                class="lorem-image"
                 style="float: left;"
               />
               Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. 
@@ -93,7 +98,8 @@
                     alt="Sault College logo" width="70">
             </picture>
         </footer>
-        <a href="#top" class="back-to-top" title="Back to top">Return to top page</a>    </div>
+        <a href="#top" class="back-to-top" title="Back to top">◤</a>    
+      </div>
 </body>
 
 </html>
