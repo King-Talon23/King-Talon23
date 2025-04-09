@@ -391,6 +391,17 @@ a[href="#top"]:hover {
       content: " hrs/wk";
     }
   }
+
+
+@media (max-width: 600px) {
+    .lorem-image {
+      float: none !important; 
+      display: block;         
+      margin-left: auto;      
+      margin-right: auto;      
+    }
+  }
+  
   
   
   
