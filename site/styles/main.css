@@ -325,7 +325,7 @@ a[href="#top"]:hover {
   
 
   .back-to-top:hover {
-    transform: rotate(180deg);
+    transform: rotate(45deg);
     transition: transform 200ms; 
   }
 
