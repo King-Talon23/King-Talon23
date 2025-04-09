@@ -401,6 +401,26 @@ a[href="#top"]:hover {
       margin-right: auto;      
     }
   }
+
+  @media (max-width: 700px) {
+    header nav ul {
+      display: flex;          
+      flex-direction: column; 
+      align-items: center;     
+    }
+  
+
+    header nav a {
+      padding-top: 0.5em;    
+      border-top: none;      
+    }
+  
+    header nav a:hover {
+      text-decoration: underline; 
+      border-top: none;           
+    }
+  }
+  
   
   
   
