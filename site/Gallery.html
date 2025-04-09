@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Talon King">
+    <meta name="description"
+        content="Welcome to Talon's website, showcasing my favorite things, a haiku, and some other stuff.">
+    <title>Talon King's Website</title>
+    <link rel="icon" type="image/png" href="/King-Talon23/site/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/King-Talon23/site/favicon.svg">
+    <link rel="shortcut icon" href="/King-Talon23/site/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/King-Talon23/./apple-touch-icon.png">
+    <link rel="manifest" href="/King-Talon23/./site.webmanifest">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+        <style>
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+            
+            .gallery a {
+                display: block;
+                transition: transform 0.3s ease;
+            }
+            
+            .gallery a:hover {
+                transform: scale(1.1);
+            }
+            
+            .gallery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            
+            .gallery .row-span-2 {
+                grid-row: span 2;
+            }
+            
+            .gallery .col-span-2 {
+                grid-column: span 2;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="width-wrap">
+        <header id="top">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="lorem.html">Lorem</a></li>
+                    <li><a href="survey.html">Survey(pls fill out)</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="gallery">
+                <a href="https://loremflickr.com/1024/1024?lock=1" class="row-span-2">
+                  <img src="https://loremflickr.com/300/600?lock=1" />
+                </a>
+                <a href="https://loremflickr.com/1024/1024?lock=2"><img src="https://loremflickr.com/300/300?lock=2" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=3"><img src="https://loremflickr.com/300/300?lock=3" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=4"><img src="https://loremflickr.com/300/300?lock=4" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=5"><img src="https://loremflickr.com/300/300?lock=5" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=6"><img src="https://loremflickr.com/300/300?lock=6" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=7"><img src="https://loremflickr.com/300/300?lock=7" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=8"><img src="https://loremflickr.com/300/300?lock=8" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=9"><img src="https://loremflickr.com/300/300?lock=9" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=10" class="row-span-2 col-span-2">
+                  <img src="https://loremflickr.com/600/600?lock=10" />
+                </a>
+                <a href="https://loremflickr.com/1024/1024?lock=11"><img src="https://loremflickr.com/300/300?lock=11" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=12"><img src="https://loremflickr.com/300/300?lock=12" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=13"><img src="https://loremflickr.com/300/300?lock=13" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=14"><img src="https://loremflickr.com/300/300?lock=14" /></a>
+                <a href="https://loremflickr.com/1024/1024?lock=15"><img src="https://loremflickr.com/300/300?lock=15" /></a>
+              </div>
+        </main>
+        <footer>
+            <hr>
+            <blockquote>
+                "Be yourself; everyone else is already taken."
+            </blockquote>
+            <cite>&mdash; <span class="author">Oscar Wilde</span></cite>
+            <p>&copy; 2021 <a href="mailto:24041720@saultcollege.ca?subject=Message from CSD112 Website">Talon King</a>
+            </p>
+            <picture>
+                <source srcset="/images/sc-logo.svg" type="image/svg+xml">
+                <img src="images/sc-logo.png" srcset="images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x"
+                    alt="Sault College logo" width="70">
+            </picture>
+        </footer>
+        <a href="#top" title="Back to top">Return to top page</a>
+    </div>
+</body>
+
+</html>
