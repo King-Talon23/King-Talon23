@@ -259,6 +259,38 @@ a[href="#top"]:hover {
     text-decoration: none;
 }
 
+.favourites input[type="radio"] {
+    display: none;
+}
+
+.favourites label {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #eee;
+    cursor: pointer;
+    margin-right: 0.2em;
+    border-radius: 6px 6px 0 0;
+    font-weight: bold;
+}
+
+.favourites input[type="radio"]:checked + label {
+    background-color: #c70000;
+    color: white;
+}
+
+.favourites label + div {
+    display: none;
+    padding: 1em;
+    border: 2px solid #c70000;
+    border-top: none;
+    background: #fff;
+}
+
+.favourites input[type="radio"]:checked + label + div {
+    display: block;
+}
+
+
 
 
 

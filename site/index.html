@@ -37,11 +37,11 @@
             <h1>Welcome to Talons Website</h1>
 
             <div class="bio">
-                <a href="/site/images/fullsizeme.jpg">
+                <a href="images/fullsizeme.jpg">
                     <picture>
-                        <source srcset="site/images/smallme.jpg" media="(max-width: 500px)">
-                        <source srcset="site/images/mediumme.jpg" media="(min-width: 501px)">
-                        <img src="site/images/mediumme.jpg" alt="A photo of me on the way to sudbury" class="selfie">
+                        <source srcset="images/smallme.jpg" media="(max-width: 500px)">
+                        <source srcset="images/mediumme.jpg" media="(min-width: 501px)">
+                        <img src="images/mediumme.jpg" alt="A photo of me on the way to sudbury" class="selfie">
                     </picture>
                 </a>
 
@@ -142,42 +142,53 @@
             </div>
 
             <h2>My Favourite Things</h2>
-            <figure>
-                <a href="https://my.clevelandclinic.org/health/body/22601-insulin">
-                    <img src="/site/images/logo.jpg" alt="Logo">
-                </a>
-                <figcaption>I &lt;3 insulin.</figcaption>
-            </figure>
+            <div class="favourites">
+                <input type="radio" name="tabset" id="tab1" checked>
+                <label for="tab1"><h3>Insulin Picture</h3></label>
+                <div>
+                    <figure>
+                        <a href="https://my.clevelandclinic.org/health/body/22601-insulin">
+                            <img src="images/logo.jpg" alt="Logo">
+                        </a>
+                        <figcaption>I &lt;3 insulin.</figcaption>
+                    </figure>
+                </div>
 
-            <h3>Favorite Games</h3>
-            <ol>
-                <li>Chess</li>
-                <li>Bo2</li>
-                <li>Noita</li>
-            </ol>
+                <input type="radio" name="tabset" id="tab2">
+                <label for="tab2"><h3>Favorite Games</h3></label>
+                <div>
+                    <ol>
+                        <li>Chess</li>
+                        <li>Bo2</li>
+                        <li>Noita</li>
+                    </ol>
+                </div>
 
-            <h3>Haiku</h3>
-            <p>
-                I write, erase, rewrite<br>
-                Erase again, and then<br>
-                A poppy blooms.<br>
-                <cite>by <span class="author">Katsushika Hokusai</span></cite>
-            </p>
+                <input type="radio" name="tabset" id="tab3">
+                <label for="tab3"><h3>Haiku</h3></label>
+                <div>
+                    <p>
+                        I write, erase, rewrite<br>
+                        Erase again, and then<br>
+                        A poppy blooms.<br>
+                        <cite>by <span class="author">Katsushika Hokusai</span></cite>
+                    </p>
+                </div>
 
-            <h3>Public Domain Adutiobook</h3>
-            <audio controls>
-                <source
-                    src="https://www.archive.org/download/alexanderhamilton_1301_librivox/alexanderhamilton_01_conant_64kb.mp3"
-                    type="audio/mpeg">Your browser does not support this, download the book here.<a
-                    href="https://www.archive.org/download/alexanderhamilton_1301_librivox/alexanderhamilton_1301_librivox_64kb_mp3.zip"></a>
-            </audio>
+                <input type="radio" name="tabset" id="tab4">
+                <label for="tab4"><h3>Public Domain Audiobook</h3></label>
+                <div>
+                    <audio controls>
+                        <source src="https://www.archive.org/download/alexanderhamilton_1301_librivox/alexanderhamilton_01_conant_64kb.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
 
-            <h3>YouTube Video</h3>
-            <iframe width="939" height="528" src="https://www.youtube.com/embed/2Pch_VwJFPk"
-                title="How a Burger Explains Global Economics (The Big Mac Index)" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                <input type="radio" name="tabset" id="tab5">
+                <label for="tab5"><h3>YouTube Video</h3></label>
+                <div>
+                    <iframe width="939" height="528" src="https://www.youtube.com/embed/2Pch_VwJFPk" title="How a Burger Explains Global Economics (The Big Mac Index)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </main>
         <footer>
             <hr>
@@ -189,7 +200,7 @@
             </p>
             <picture>
                 <source srcset="/images/sc-logo.svg" type="image/svg+xml">
-                <img src="/images/sc-logo.png" srcset="images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x"
+                <img src="images/sc-logo.png" srcset="images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x"
                     alt="Sault College logo" width="70">
             </picture>
         </footer>
