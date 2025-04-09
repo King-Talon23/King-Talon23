@@ -349,6 +349,52 @@ a[href="#top"]:hover {
     }
 }
 
+@media (max-width: 450px) {
+    table.courses {
+
+      border-collapse: separate;
+    }
+  
+
+    table.courses thead,
+    table.courses tfoot,
+    table.courses th {
+      display: none;
+    }
+  
+
+    table.courses td {
+      display: block;
+      padding: 0 1rem;
+    }
+  
+
+    table.courses caption {
+      caption-side: top;
+    }
+  
+
+    table.courses td:first-of-type {
+      padding-top: 0.3em;
+      font-weight: bold;
+    }
+  
+
+    table.courses td:last-of-type {
+      padding-bottom: 0.3em;
+      font-style: italic;
+      font-size: 0.8em;
+    }
+  
+
+    table.courses td:last-of-type::after {
+      content: " hrs/wk";
+    }
+  }
+  
+  
+  
+
 
   
   
